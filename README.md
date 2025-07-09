@@ -1,39 +1,35 @@
-# Lecture - 0: Fundamentals of PyTorch 🧑‍💻🔥
-Welcome to Lecture 0 of the PyTorch series. This notebook provides a comprehensive introduction to PyTorch, one of the most popular and powerful deep learning frameworks used in research and production today.
+# 📄 Lecture - 0: Fundamentals of PyTorch 🧑‍💻🔥
 
-This hands-on tutorial is designed for absolute beginners who are new to PyTorch, machine learning, and deep learning. The lecture covers the essential building blocks of PyTorch through simple code examples and explanations.
+Welcome to **Lecture 0** of the **PyTorch series**. This notebook provides a comprehensive introduction to **PyTorch**, one of the most popular and powerful deep learning frameworks used in research and production today.
 
-🚀 What You'll Learn:
-🔧 1. Setting Up the Environment:
-How to check GPU availability in Google Colab using:
+This hands-on tutorial is designed for **absolute beginners** who are new to **PyTorch**, **Machine Learning**, and **Deep Learning**. The lecture covers the **essential building blocks of PyTorch** through simple code examples and explanations.
 
-python
-Copy
-Edit
-!nvidia-smi
+---
+
+## 🚀 What You'll Learn
+
+### 🔧 1. Setting Up the Environment
+- Checking **GPU availability** in **Google Colab** using:
+  ```python
+  !nvidia-smi
 Installing and importing essential Python libraries:
 
-torch for deep learning
+* torch — for deep learning
+* numpy — for numerical computing
+* pandas — for data handling
 
-numpy for numerical computing
-
-pandas for data handling
-
-matplotlib for visualization
-
-🔢 2. PyTorch Tensors:
-What are Tensors and how they form the foundation of PyTorch computations.
+🔢 2. PyTorch Tensors
+Understanding what Tensors are and how they form the foundation of PyTorch computations.
 
 Creating tensors using:
 
-torch.tensor()
-
-torch.zeros()
-
-torch.ones()
-
-torch.rand()
-
+*python
+*Copy
+*Edit
+*torch.tensor()
+*torch.zeros()
+*torch.ones()
+*torch.rand()
 Checking tensor properties:
 
 .shape
@@ -46,16 +42,27 @@ Performing tensor operations:
 
 Addition, subtraction, multiplication, division
 
-Matrix multiplication (torch.mm or @ operator)
+Matrix multiplication using:
 
-Reshaping tensors using .view() and .reshape()
+python
+Copy
+Edit
+torch.mm()
+# or
+@
+Reshaping tensors using:
 
-📈 3. Basic Data Visualization:
+python
+Copy
+Edit
+tensor.view()
+tensor.reshape()
+📈 3. Basic Data Visualization
 Visualizing numerical data using Matplotlib.
 
-Plotting simple graphs to understand data and trends.
+Plotting simple graphs to explore data and trends.
 
-🔄 4. Introduction to Autograd (Automatic Differentiation):
+🔄 4. Introduction to Autograd (Automatic Differentiation)
 Concept of automatic gradient computation in PyTorch using:
 
 python
@@ -67,29 +74,22 @@ y.backward()
 print(x.grad)
 How PyTorch builds and computes gradients automatically for complex computations.
 
-Basic hands-on with .backward() and .grad.
+Hands-on practice with .backward() and .grad.
 
-💡 Key Takeaways:
-Understand the core data structure (Tensor) of PyTorch.
+💡 Key Takeaways
+Understand the core data structure: PyTorch Tensors.
 
-Get comfortable with basic tensor manipulations and operations.
+Perform basic tensor manipulations and operations.
 
-Learn to visualize data and compute gradients—the first step toward building deep learning models.
+Learn to visualize data and compute gradients—the first step towards building deep learning models.
 
-📌 Running the Notebook:
-It is recommended to run this notebook in Google Colab with GPU acceleration for best performance.
+📌 Running the Notebook
+It is recommended to run this notebook in Google Colab with GPU acceleration for the best performance.
 
-Make sure to check GPU availability using !nvidia-smi before proceeding.
+Check GPU availability using:
 
+python
+Copy
+Edit
+!nvidia-smi
 🔗 Notebook: 0_Pytorch.ipynb
-🌱 What's Next:
-This lecture sets the foundation for upcoming topics such as:
-
-Building Neural Networks from scratch in PyTorch
-
-Training models with real datasets
-
-Implementing Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs)
-
-Transfer Learning and more...
-
